@@ -1,0 +1,101 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+
+	color: var(--text-color);
+	background-color: var(--white);
+
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+img {
+	display: block;
+
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+
+	color: inherit;
+}
+
+.visually-hidden {
+	position: absolute !important;
+
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7*/
+	clip: rect(1px, 1px, 1px, 1px);
+
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+
+	border: 0 !important;
+}
+
+.list-reset {
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+}
+
+.btn-reset {
+	margin: 0;
+	padding: 0;
+
+	cursor: pointer;
+
+	color: inherit;
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.lock {
+	overflow: hidden;
+}
+
+.container {
+	min-width: 320px;
+	max-width: var(--container-max);
+	margin: 0 auto;
+	padding: 0 var(--container-padding);
+}
+
+.section-title {
+	margin-top: 0;
+	margin-bottom: 30px;
+
+	color: var(--text-color);
+
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 65px;
+}
+
+@media (max-width: 640px) {
+	:root {
+		--container-padding: 15px;
+	}
+
+	.section-title {
+		font-size: 28px;
+		line-height: 38px;
+	}
+}

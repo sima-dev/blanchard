@@ -1,0 +1,183 @@
+.modals-overlay {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	display: flex;
+	visibility: hidden;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 100vh;
+
+	transition: all 0.3s;
+
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+	z-index: 100;
+
+	display: none;
+
+	width: 900px;
+	height: 500px;
+
+	background-color: var(--white);
+}
+
+.modals-overlay--visible {
+	visibility: visible;
+
+	transition: all 0.3s;
+
+	opacity: 1;
+}
+
+.modal--visible {
+	display: flex;
+}
+
+.modal__picture {
+	width: calc(400 / 900 * 100%);
+}
+
+.modal__content {
+	position: relative;
+
+	width: calc(500 / 900 * 100%);
+	padding: 128px 50px;
+
+	color: var(--text-color);
+}
+
+.modal__btn-close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+	display: flex;
+
+	padding: 5px;
+
+	transition: border-color var(--short);
+
+	border: 2px solid transparent;
+}
+
+.modal__svg path {
+	transition: fill var(--short);
+}
+
+.modal__btn-close:hover .modal__svg path {
+	fill: var(--violet);
+}
+
+.modal__btn-close:focus:not(:active):not(:hover) {
+	border-color: var(--violet);
+}
+
+.modal__btn-close:active .modal__svg path {
+	fill: var(--dark-violet);
+}
+
+.modal__painter {
+	margin-top: 0;
+	margin-bottom: 0;
+
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 32px;
+}
+
+.modal__painting {
+	margin-top: 0;
+	margin-bottom: 0;
+
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 21px;
+}
+
+.modal__painting-date {
+	display: inline-block;
+
+	margin-bottom: 40px;
+
+	color: var(--dates-gray);
+
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+}
+
+.modal__description {
+	margin: 0;
+
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+@media (max-width: 1280px) {
+	.modal {
+		width: 594px;
+		height: 594px;
+	}
+
+	.modal__picture {
+		width: calc(264 / 594 * 100%);
+	}
+
+	.modal__content {
+		width: calc(330 / 594 * 100%);
+		padding-top: 122px;
+		padding-bottom: 90px;
+	}
+}
+
+@media (max-width: 970px) {
+	.modal {
+		width: 668px;
+	}
+
+	.modal__picture {
+		width: calc(301 / 594 * 100%);
+	}
+
+	.modal__content {
+		width: calc(367 / 668 * 100%);
+		padding-top: 122px;
+		padding-right: 36px;
+		padding-bottom: 122px;
+	}
+}
+
+@media (max-width: 640px) {
+	.modal {
+		flex-direction: column;
+
+		width: 290px;
+		height: 400px;
+	}
+
+	.modal__picture {
+		width: 100%;
+		height: 200px;
+
+		object-fit: cover;
+	}
+
+	.modal__content {
+		width: 100%;
+		padding-top: 17px;
+		padding-right: 20px;
+		padding-bottom: 26px;
+		padding-left: 20px;
+	}
+}

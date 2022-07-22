@@ -1,0 +1,483 @@
+.events {
+	padding-top: 40px;
+	padding-bottom: 81px;
+}
+
+.events__container {
+	display: flex;
+	flex-direction: column;
+}
+
+.events__title {
+	margin-bottom: 16px;
+}
+
+.events__slider-container {
+	overflow: hidden;
+
+	width: 100%;
+}
+
+.events__slider-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.events__article {
+	display: flex;
+	flex-shrink: 0;
+
+	width: calc(100% / 3 - 100px / 3);
+	margin-right: 50px;
+	margin-bottom: 50px;
+	padding-top: 18.55%;
+
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+}
+
+.events__article:nth-child(3n) {
+	margin-right: 0;
+}
+
+.events__article.is-hidden {
+	display: none;
+}
+
+.events__article_1 {
+	background-image: url("../assets/img/events/event-1_1920_1x.jpg");
+}
+
+@media (min-resolution: 2dppx) {
+	.events__article_1 {
+		background-image: url("../assets/img/events/event-1_1920_2x.jpg");
+	}
+}
+
+.events__article_2 {
+	background-image: url("../assets/img/events/event-2_1920_1x.jpg");
+}
+
+@media (min-resolution: 2dppx) {
+	.events__article_2 {
+		background-image: url("../assets/img/events/event-2_1920_2x.jpg");
+	}
+}
+
+.events__article_3 {
+	background-image: url("../assets/img/events/event-3_1920_1x.jpg");
+}
+
+@media (min-resolution: 2dppx) {
+	.events__article_3 {
+		background-image: url("../assets/img/events/event-3_1920_2x.jpg");
+	}
+}
+
+.events__article_4 {
+	background-image: url("../assets/img/events/event-4_1920_1x.jpg");
+}
+
+@media (min-resolution: 2dppx) {
+	.events__article_4 {
+		background-image: url("../assets/img/events/event-4_1920_2x.jpg");
+	}
+}
+
+.events__article_5 {
+	background-image: url("../assets/img/events/event-5_1920_1x.jpg");
+}
+
+@media (min-resolution: 2dppx) {
+	.events__article_5 {
+		background-image: url("../assets/img/events/event-5_1920_2x.jpg");
+	}
+}
+
+.events__article-content {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	/* Почему не наследуется из global??? и если не указать, то content-box */
+
+	box-sizing: border-box;
+	min-height: 403px;
+	padding-top: 17px;
+	padding-right: 30px;
+	padding-bottom: 40px;
+	padding-left: 49px;
+
+	border: 1px solid var(--light-gray);
+	border-top: none;
+}
+
+.events__place,
+.events__time {
+	display: block;
+	align-self: flex-end;
+
+	margin-right: -12px;
+
+	color: var(--middle-gray);
+
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 16px;
+}
+
+.events__time {
+	margin-bottom: 4px;
+}
+
+.events__name {
+	margin-top: 0;
+	margin-bottom: 2px;
+
+	color: var(--text-color);
+
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 33px;
+}
+
+.events__description {
+	margin: 0;
+
+	color: var(--text-color);
+
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+.events__link {
+	margin-top: auto;
+
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+.events__btn {
+	align-self: center;
+
+	padding: 18px 34px;
+}
+
+@media (max-width: 1280px) {
+	.events {
+		padding-top: 41px;
+		padding-bottom: 80px;
+	}
+
+	.events__title {
+		margin-bottom: 15px;
+	}
+
+	.events__article {
+		width: calc(100% / 3 - 50px / 3);
+		margin-right: 25px;
+		padding-top: 21.5%;
+	}
+
+	.events__article_1 {
+		background-image: url("../assets/img/events/event-1_1024_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_1 {
+			background-image: url("../assets/img/events/event-1_1024_2x.jpg");
+		}
+	}
+
+	.events__article_2 {
+		background-image: url("../assets/img/events/event-2_1024_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_2 {
+			background-image: url("../assets/img/events/event-2_1024_2x.jpg");
+		}
+	}
+
+	.events__article_3 {
+		background-image: url("../assets/img/events/event-3_1024_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_3 {
+			background-image: url("../assets/img/events/event-3_1024_2x.jpg");
+		}
+	}
+
+	.events__article_4 {
+		background-image: url("../assets/img/events/event-4_1024_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_4 {
+			background-image: url("../assets/img/events/event-4_1024_2x.jpg");
+		}
+	}
+
+	.events__article_5 {
+		background-image: url("../assets/img/events/event-5_1024_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_5 {
+			background-image: url("../assets/img/events/event-5_1024_2x.jpg");
+		}
+	}
+
+	.events__article-content {
+		min-height: 485px;
+		padding-top: 17px;
+		padding-right: 28px;
+		padding-bottom: 48px;
+		padding-left: 34px;
+	}
+
+	.events__place,
+	.events__time {
+		margin-right: -17px;
+	}
+
+	.events__name {
+		margin-bottom: 2px;
+	}
+}
+
+@media (max-width: 970px) {
+	.events {
+		padding-top: 31px;
+		padding-bottom: 80px;
+	}
+
+	.events__article {
+		width: calc(100% / 2 - 34px / 2);
+		margin-right: 34px;
+		padding-top: 29.9%;
+	}
+
+	.events__article:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	.events__article_1 {
+		background-image: url("../assets/img/events/event-1_768_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_1 {
+			background-image: url("../assets/img/events/event-1_768_2x.jpg");
+		}
+	}
+
+	.events__article_2 {
+		background-image: url("../assets/img/events/event-2_768_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_2 {
+			background-image: url("../assets/img/events/event-2_768_2x.jpg");
+		}
+	}
+
+	.events__article_3 {
+		background-image: url("../assets/img/events/event-3_768_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_3 {
+			background-image: url("../assets/img/events/event-3_768_2x.jpg");
+		}
+	}
+
+	.events__article_4 {
+		background-image: url("../assets/img/events/event-4_768_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_4 {
+			background-image: url("../assets/img/events/event-4_768_2x.jpg");
+		}
+	}
+
+	.events__article_5 {
+		background-image: url("../assets/img/events/event-5_768_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_5 {
+			background-image: url("../assets/img/events/event-5_768_2x.jpg");
+		}
+	}
+
+	.events__article-content {
+		min-height: 484px;
+		padding-top: 14px;
+		padding-right: 24px;
+		padding-bottom: 48px;
+	}
+
+	.events__place,
+	.events__time {
+		margin-right: -8px;
+	}
+}
+
+@media (max-width: 640px) {
+	.events {
+		padding-top: 32px;
+		padding-bottom: 40px;
+	}
+
+	.events__title {
+		margin-bottom: 11px;
+
+		font-size: 28px;
+	}
+
+	.events__slider-container {
+		position: relative;
+	}
+
+	.events__slider-wrapper {
+		flex-wrap: nowrap;
+		margin-bottom: 7px;
+	}
+
+	.events__article {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 0;
+		padding-top: 69%;
+	}
+
+	.events__article_1 {
+		background-image: url("../assets/img/events/event-1_320_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_1 {
+			background-image: url("../assets/img/events/event-1_320_2x.jpg");
+		}
+	}
+
+	.events__article_2 {
+		background-image: url("../assets/img/events/event-2_320_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_2 {
+			background-image: url("../assets/img/events/event-2_320_2x.jpg");
+		}
+	}
+
+	.events__article_3 {
+		background-image: url("../assets/img/events/event-3_320_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_3 {
+			background-image: url("../assets/img/events/event-3_320_2x.jpg");
+		}
+	}
+
+	.events__article_4 {
+		background-image: url("../assets/img/events/event-4_320_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_4 {
+			background-image: url("../assets/img/events/event-4_320_2x.jpg");
+		}
+	}
+
+	.events__article_5 {
+		background-image: url("../assets/img/events/event-5_320_1x.jpg");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.events__article_5 {
+			background-image: url("../assets/img/events/event-5_320_2x.jpg");
+		}
+	}
+
+	.events__article-content {
+		min-height: 483px;
+		padding-right: 9px;
+		padding-bottom: 49px;
+		padding-left: 28px;
+	}
+
+	.events__place,
+	.events__time {
+		margin-right: 0;
+	}
+
+	.events__time {
+		margin-bottom: 4px;
+	}
+
+	.events__name {
+		margin-bottom: 5px;
+	}
+
+	.events__name--first {
+		margin-bottom: 35px;
+	}
+
+	.events__btn {
+		display: none;
+	}
+
+	.events__pagination {
+		position: absolute;
+		text-align: center;
+	}
+
+	.swiper-horizontal > .swiper-pagination-bullets,
+	.swiper-pagination-bullets.swiper-pagination-horizontal,
+	.swiper-pagination-custom,
+	.swiper-pagination-fraction {
+		bottom: 0;
+	}
+
+	.events {
+		--swiper-pagination-color: var(--light-gray);
+		--swiper-pagination-bullet-width: 10px;
+		--swiper-pagination-bullet-height: 10px;
+		--swiper-pagination-bullet-horizontal-gap: 7px;
+		--swiper-pagination-bullet-inactive-color: var(--dark-gray);
+		--swiper-pagination-bullet-inactive-opacity: 0.4;
+	}
+
+	/* .events__pagination.swiper-container-horizontal > .swiper-pagination-bullets {
+		display: flex;
+		justify-content: stretch;
+	}
+
+	.swiper-container-horizontal
+		> .swiper-pagination-bullets
+		.swiper-pagination-bullet {
+		width: 10px;
+		height: 10px;
+		margin: 0 7px;
+
+		opacity: 1;
+		background-color: var(--light-gray);
+	}
+
+	.swiper-container-horizontal
+		> .swiper-pagination-bullets
+		.swiper-pagination-bullet-active {
+		background-color: var(--dark-gray);
+	}
+
+	.events__pagination {
+		text-align: center;
+	} */
+}
